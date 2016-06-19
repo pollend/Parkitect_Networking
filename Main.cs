@@ -11,10 +11,9 @@ namespace RollercoasterEdit
 		private GameObject _go;
         public void onEnabled()
         {
-			_go = new GameObject ("Network Handle");
-			_go.AddComponent<ParkitectNetworking> ();
-			
-		}
+            _go = new GameObject ("Network Handle");
+            _go.AddComponent<ParkitectNetworking> ();
+        }
 
         public void onDisabled()
         {

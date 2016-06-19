@@ -2,8 +2,6 @@
 using UnityEngine.Networking;
 using UnityEngine;
 
-namespace HelloMod
-{
 	public class ParkitectServer : NetworkServerSimple
 	{
 		public override void Initialize ()
@@ -12,5 +10,5 @@ namespace HelloMod
 			base.Initialize ();
 		}
 	}
-}
+
 

@@ -2,24 +2,28 @@
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace HelloMod
+public class ParkitectNetworking : MonoBehaviour
 {
-	public class ParkitectNetworking : MonoBehaviour
-	{
-		ParkitectNetworkServer _server;
-		public ParkitectNetworking ()
-		{
-			_server = new ParkitectNetworkServer ();
+    NetworkServer _server;
+    public static ParkitectNetworking instance;
 
-			_server.Listen (6000);
+    void Start()
+    {
+        ParkitectNetworking.instance = this;
 
-		}
 
-		public void OnGuI()
-		{
-			
-		}
+        _server = new NetworkServer ();
 
-	}
+        //_server.RegisterHandler (Protocals.ParkitectBuild, new NetworkMessageDelegate ());
+            
+        _server.Listen (6000);
+
+
+    }
+
+    void Start()
+    {
+    }
+
 }
 
