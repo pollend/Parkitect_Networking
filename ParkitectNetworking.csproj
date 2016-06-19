@@ -64,8 +64,9 @@
     <Compile Include="Networking\ParkitectNetworking.cs" />
     <Compile Include="Networking\BuildableMessagePackeg100.cs" />
     <Compile Include="Networking\NetworkServer.cs" />
-    <Compile Include="Networking\BaseNetworkItem.cs" />
     <Compile Include="Networking\Protocal.cs" />
+    <Compile Include="Networking\MonoWrapper\SerializableNetworkBehavior.cs" />
+    <Compile Include="Networking\MonoWrapper\DecoNetwork.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
@@ -74,5 +75,6 @@
   <ItemGroup />
   <ItemGroup>
     <Folder Include="Networking\" />
+    <Folder Include="Networking\MonoWrapper\" />
   </ItemGroup>
 </Project>
